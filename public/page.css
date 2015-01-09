@@ -1,0 +1,254 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+body {
+    margin: 0%;
+    font-family: helvetica;
+}
+
+.aptbox {
+     margin-left: 37.5%;
+     margin-right: 37.5%;
+     text-align:center;
+     border: .2em solid white;
+     position:absolute;
+     width: 25%;
+     margin-top: 10%;
+}
+
+.line {
+    width: 8%;
+    height: .1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+    font-size: 1.4vw;
+    line-height: 150%;
+}
+
+
+
+
+
+#left-info {
+    width: 38%;
+    margin-right: auto;
+    float: left;
+    text-align: center;
+}
+
+#middle-info {
+    width: 24%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    text-align: center;
+}
+
+#right-info {
+    width: 38%;
+    margin-left: auto;
+    float: right;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+}
+
+#info {
+    font-size: 1.25vw;
+}
+
+#info-box {
+    margin-top: 4vh;
+}
+
+#topic {
+    font-size: 1.5vw;
+}
+
+#sub-top {
+    font-size: 1.25vw;
+    margin: 1%
+}
+
+#v-line {
+    height: 21.5vw;
+    width: .125%;
+    background-color: black;
+    position: absolute;
+}
+
+#info-container {
+    height: 40vw;
+    width: 100%;
+}
+
+
+
+.footer {
+    background-color: #f2f2f2;
+    height: 9vw;
+    width: 100%;
+}
+
+.location {
+    float: left;
+    width: 15%;
+    margin-left: 23.333%;
+}
+
+.contact {
+    float: right;
+    width: 15%;
+    margin-right: 23.333%;
+}
+
+.social {
+    float: left;
+    width: 23%;
+    margin-left: 10.333%;
+}
+
+.footer-sub {
+    font-size: 1.5vw;
+}
+
+.footer-text {
+    font-size: 1.15vw;
+}
+
+#slider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+#slide {
+    width: 100%;
+}
+
+div > div > img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+	
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+.slides {
+    padding: 0;
+    width:100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container {
+display: block;
+height:40vh;
+width: 100%; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    display: block;
+    width: 75%;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2 {
+	background: rgba(0, 0, 0, 0.8);
+}

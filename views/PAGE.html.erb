@@ -1,0 +1,135 @@
+<html>
+    <head>
+		<link rel="stylesheet" type="text/javascript" href="page.css">
+        <script type="text/javascript"></script>
+        <link href="page.js" rel="stylesheet" type="text/javascript">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script>
+        slideimages = new Array();
+                    var images = ["images/info2.png", "images/info1.png"];
+                    for (var i = 0; i < images.length; i++) {
+                           tempImage = new Image();
+                           tempImage.src = images[i];
+                           slideimages.push(tempImage);
+                    }
+        </script>
+        
+    </head>
+    <body>
+        <div>
+            <div style="position:absolute; margin-left: 25%; margin-right: 25%; width: 50%; text-align: center; margin-top: 15%;">
+                <p style="color: white; font-size: 3vw;margin-bottom: 4%;">
+                    <strong>Linda Tran /</strong> MS / NCC / LPC
+                </p>
+                <div class="line" style="background-color: white; width: 10%;">
+                    
+                </div>
+                <p style="color: white; font-size: 1.4vw;">
+                    Providing professional physiological care for over 8 years
+                </p>
+                </div>
+            </div>
+            <img src="images/lakeside.png" style="width:100%"/>
+        </div>
+        <div style="text-align:center; width:80%; margin-left: auto; margin-right: auto;">
+            <p style="font-size: 3vw; margin-bottom: 3%;">
+                <strong>
+                    <i>Introduction</i>
+                </strong>
+            </p>
+            <div class="line" style="background-color:black;margin-bottom: 2%;">
+                
+            </div>
+            <p class="intro" style="margin-bottom: 5%;">
+                I have over 8 years of mental health counseling experience working with a variety of mental health issues, ranging from anxiety, depression, and
+                substance abuse, to schizophrenia and bipolar disorder, and everything in between. I have worked with very small children, teens, young adults,
+                and the elderly. I find that each client helps me become a better supporter for every person that I encounter, as my personal belief is that we all
+                have something to contribute to society, and to others individually. We all try our very best, and we have our strengths and areas that we need
+                some help with. If we can help each other work on bettering ourselves by exploring decisions that we've made in the past, we can become
+                healthier and happier people who make better decisions to shape our future. Allow me to be a part of your journey to self discovery, to help ease
+                your pain, and to be the beginnings of your brighter future.
+            </p>
+        </div>
+        <div>
+            <a href="/appointments">
+                <div class="aptbox">
+                    <p style="color: white; font-size: 2vw;">
+                        Make an appointment
+                    </p>
+                </div>
+            </a>
+            <img src="images/forest.png" style="width: 100%;"/>
+        </div>
+        
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+			<img src="images/info1.png" />
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="images/info2.png" />
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-1" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+    </li>
+</ul>
+            
+	        <!--<div id="slider">
+                <img src="" id="slide" style="width: 100%" />
+            </div>
+
+            
+                                             <script type="text/javascript">
+                                                var step = 0;
+                                             
+                                                function slideit(){
+                                                 $("#slider").html(slideimages[ (step+1) % 2]);
+                                         
+                                        
+                                                 //this function uses "slideit()" every 8 seconds
+                                                 step = step + 1;
+                                                 setTimeout("slideit()",7000);
+                                                }
+                                        
+                                                slideit();
+                                            </script>
+		</div>-->
+
+        <div class="footer">
+            <div class="location">
+                <p class="footer-sub"><strong>Our Location</strong></p>
+                <p class="footer-text"><i>91 West Street
+                    <br>Danbury, CT 06810
+                </i></p>
+            </div>
+            
+            <div class="contact">
+                <p class="footer-sub"><strong>Get In Touch</strong></p>
+                <p class="footer-text"><i>203-748-2936
+                    <br>lindaseingtran@gmail.com
+                </i></p>
+            </div>
+            
+            <!--<div class="social">
+                <p class="footer-sub"><strong>Stay Connected</strong></p>-->
+                <!--links-->
+            </div>
+        </div>
+    </body>
+</html>
