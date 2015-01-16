@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'pony'
-
+require 'pry'
 
 def send_email(from_user, name, date, description)
   Pony.mail({
