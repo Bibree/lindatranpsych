@@ -103,9 +103,10 @@ h1 {
 }
 
 .contact {
-    float: right;
     width: 15%;
-    margin-right: 23.333%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
 }
 
 .social {
